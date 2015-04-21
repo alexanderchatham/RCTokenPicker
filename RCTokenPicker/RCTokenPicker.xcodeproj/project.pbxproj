@@ -10,6 +10,10 @@
 		305E47241AE40F0A0091FCEB /* RCTokenPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 305E47231AE40F0A0091FCEB /* RCTokenPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		305E472A1AE40F0A0091FCEB /* RCTokenPicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 305E471E1AE40F0A0091FCEB /* RCTokenPicker.framework */; };
 		305E47311AE40F0A0091FCEB /* RCTokenPickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305E47301AE40F0A0091FCEB /* RCTokenPickerTests.swift */; };
+		305E473B1AE599460091FCEB /* RCTokenViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305E473A1AE599460091FCEB /* RCTokenViewStyle.swift */; };
+		305E473D1AE599860091FCEB /* RCTokenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305E473C1AE599860091FCEB /* RCTokenView.swift */; };
+		305E473F1AE59AA60091FCEB /* RCTokenPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305E473E1AE59AA60091FCEB /* RCTokenPickerView.swift */; };
+		305E47411AE59B0B0091FCEB /* RCTokenTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305E47401AE59B0B0091FCEB /* RCTokenTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,10 @@
 		305E47291AE40F0A0091FCEB /* RCTokenPickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RCTokenPickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		305E472F1AE40F0A0091FCEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		305E47301AE40F0A0091FCEB /* RCTokenPickerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCTokenPickerTests.swift; sourceTree = "<group>"; };
+		305E473A1AE599460091FCEB /* RCTokenViewStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCTokenViewStyle.swift; sourceTree = "<group>"; };
+		305E473C1AE599860091FCEB /* RCTokenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCTokenView.swift; sourceTree = "<group>"; };
+		305E473E1AE59AA60091FCEB /* RCTokenPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCTokenPickerView.swift; sourceTree = "<group>"; };
+		305E47401AE59B0B0091FCEB /* RCTokenTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCTokenTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +80,10 @@
 			isa = PBXGroup;
 			children = (
 				305E47231AE40F0A0091FCEB /* RCTokenPicker.h */,
+				305E473A1AE599460091FCEB /* RCTokenViewStyle.swift */,
+				305E473C1AE599860091FCEB /* RCTokenView.swift */,
+				305E473E1AE59AA60091FCEB /* RCTokenPickerView.swift */,
+				305E47401AE59B0B0091FCEB /* RCTokenTextField.swift */,
 				305E47211AE40F0A0091FCEB /* Supporting Files */,
 			);
 			path = RCTokenPicker;
@@ -209,6 +221,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				305E47411AE59B0B0091FCEB /* RCTokenTextField.swift in Sources */,
+				305E473B1AE599460091FCEB /* RCTokenViewStyle.swift in Sources */,
+				305E473D1AE599860091FCEB /* RCTokenView.swift in Sources */,
+				305E473F1AE59AA60091FCEB /* RCTokenPickerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +339,7 @@
 		305E47351AE40F0A0091FCEB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -332,12 +349,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		305E47361AE40F0A0091FCEB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -399,6 +418,7 @@
 				305E47361AE40F0A0091FCEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		305E47371AE40F0A0091FCEB /* Build configuration list for PBXNativeTarget "RCTokenPickerTests" */ = {
 			isa = XCConfigurationList;
@@ -407,6 +427,7 @@
 				305E47391AE40F0A0091FCEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
