@@ -8,19 +8,19 @@
 
 import UIKit
 
-protocol RCTokenTextFieldDelegate {
+protocol RCTokenTextViewDelegate {
     
-    func textFieldDidChange(textField: RCTokenTextField)
-    func textFieldDidHitBackspaceWithEmptyText(textField: RCTokenTextField)
+    func textFieldDidChange(textField: RCTokenTextView)
+    func textFieldDidHitBackspaceWithEmptyText(textField: RCTokenTextView)
 }
 
-class RCTokenTextField: UITextField {
+class RCTokenTextView: UITextView {
    
     ///////////////////////////////
     //////PROPERTIES///////////////
     ///////////////////////////////
     
-    var contactTextFieldDelegate: RCTokenTextFieldDelegate?
+    var contactTextViewDelegate: RCTokenTextViewDelegate?
     
     ///////////////////////////////
     /////INITIALIZERS//////////////

@@ -7,18 +7,18 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>6412E430-878E-4467-B004-05EBBB60824D</string>
 	<key>IDESourceControlProjectName</key>
-	<string>RCTokenPicker</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>0AB798D9C48E68528D23A86FC3B5612D8DA23D78</key>
 		<string>https://github.com/rchatham/RCTokenPicker.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>RCTokenPicker/RCTokenPicker.xcodeproj</string>
+	<string>RCTokenPicker.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>0AB798D9C48E68528D23A86FC3B5612D8DA23D78</key>
-		<string>../../..</string>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/rchatham/RCTokenPicker.git</string>
