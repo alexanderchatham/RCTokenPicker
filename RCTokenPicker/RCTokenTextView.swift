@@ -1,8 +1,8 @@
 //
-//  RCTokenTextField.swift
+//  RCTokenTextView.swift
 //  RCTokenPicker
 //
-//  Created by Reid Chatham on 4/20/15.
+//  Created by Reid Chatham on 4/27/15.
 //  Copyright (c) 2015 Chatham Engineering Technologies LLC. All rights reserved.
 //
 
@@ -15,7 +15,7 @@ protocol RCTokenTextViewDelegate {
 }
 
 class RCTokenTextView: UITextView {
-   
+    
     ///////////////////////////////
     //////PROPERTIES///////////////
     ///////////////////////////////
@@ -52,3 +52,4 @@ class RCTokenTextView: UITextView {
     }
     */
 }
+

@@ -13,8 +13,8 @@
 		305E473B1AE599460091FCEB /* RCTokenViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305E473A1AE599460091FCEB /* RCTokenViewStyle.swift */; };
 		305E473D1AE599860091FCEB /* RCTokenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305E473C1AE599860091FCEB /* RCTokenView.swift */; };
 		305E473F1AE59AA60091FCEB /* RCTokenPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305E473E1AE59AA60091FCEB /* RCTokenPickerView.swift */; };
-		305E47411AE59B0B0091FCEB /* RCTokenTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305E47401AE59B0B0091FCEB /* RCTokenTextField.swift */; };
 		305E477B1AE824D60091FCEB /* RCTokenPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 305E477A1AE824D60091FCEB /* RCTokenPickerView.xib */; };
+		30B105D51AEEB87C006EAE55 /* RCTokenTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B105D41AEEB87C006EAE55 /* RCTokenTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +37,8 @@
 		305E473A1AE599460091FCEB /* RCTokenViewStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCTokenViewStyle.swift; sourceTree = "<group>"; };
 		305E473C1AE599860091FCEB /* RCTokenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCTokenView.swift; sourceTree = "<group>"; };
 		305E473E1AE59AA60091FCEB /* RCTokenPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCTokenPickerView.swift; sourceTree = "<group>"; };
-		305E47401AE59B0B0091FCEB /* RCTokenTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCTokenTextField.swift; sourceTree = "<group>"; };
 		305E477A1AE824D60091FCEB /* RCTokenPickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RCTokenPickerView.xib; sourceTree = "<group>"; };
+		30B105D41AEEB87C006EAE55 /* RCTokenTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCTokenTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +85,7 @@
 				305E473A1AE599460091FCEB /* RCTokenViewStyle.swift */,
 				305E473C1AE599860091FCEB /* RCTokenView.swift */,
 				305E473E1AE59AA60091FCEB /* RCTokenPickerView.swift */,
-				305E47401AE59B0B0091FCEB /* RCTokenTextField.swift */,
+				30B105D41AEEB87C006EAE55 /* RCTokenTextView.swift */,
 				305E477A1AE824D60091FCEB /* RCTokenPickerView.xib */,
 				305E47211AE40F0A0091FCEB /* Supporting Files */,
 			);
@@ -225,9 +225,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				305E47411AE59B0B0091FCEB /* RCTokenTextField.swift in Sources */,
 				305E473B1AE599460091FCEB /* RCTokenViewStyle.swift in Sources */,
 				305E473D1AE599860091FCEB /* RCTokenView.swift in Sources */,
+				30B105D51AEEB87C006EAE55 /* RCTokenTextView.swift in Sources */,
 				305E473F1AE59AA60091FCEB /* RCTokenPickerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
