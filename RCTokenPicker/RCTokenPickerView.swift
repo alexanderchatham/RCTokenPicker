@@ -8,8 +8,29 @@
 
 import UIKit
 
-class RCTokenPickerView: UIView {
+class RCTokenPickerView: UIView, UITextViewDelegate {
 
+    ///////////////////////////////
+    //////PROPERTIES///////////////
+    ///////////////////////////////
+    
+    @IBOutlet weak var toLabel: UILabel!
+    
+    @IBOutlet weak var addContactButton: UIButton!
+    
+    @IBOutlet weak var textView: UITextView!
+    
+    ///////////////////////////////
+    ////////FUNCTIONS//////////////
+    ///////////////////////////////
+    
+    @IBAction func addContact(sender: AnyObject) {
+    }
+    
+    func textViewDidChange(textView: UITextView) {
+        
+    }
+    
     /*
     // Only override drawRect: if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.

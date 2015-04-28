@@ -84,8 +84,8 @@
 				305E47231AE40F0A0091FCEB /* RCTokenPicker.h */,
 				305E473A1AE599460091FCEB /* RCTokenViewStyle.swift */,
 				305E473C1AE599860091FCEB /* RCTokenView.swift */,
-				305E473E1AE59AA60091FCEB /* RCTokenPickerView.swift */,
 				30B105D41AEEB87C006EAE55 /* RCTokenTextView.swift */,
+				305E473E1AE59AA60091FCEB /* RCTokenPickerView.swift */,
 				305E477A1AE824D60091FCEB /* RCTokenPickerView.xib */,
 				305E47211AE40F0A0091FCEB /* Supporting Files */,
 			);

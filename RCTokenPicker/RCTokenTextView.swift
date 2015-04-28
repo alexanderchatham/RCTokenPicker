@@ -20,7 +20,7 @@ class RCTokenTextView: UITextView {
     //////PROPERTIES///////////////
     ///////////////////////////////
     
-    var contactTextViewDelegate: RCTokenTextViewDelegate?
+    var tokenTextViewDelegate: RCTokenTextViewDelegate?
     
     ///////////////////////////////
     /////INITIALIZERS//////////////

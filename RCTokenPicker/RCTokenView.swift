@@ -23,7 +23,7 @@ class RCTokenView: UIView {
     
     let name: String
     var label: UILabel
-    let textField: RCTokenTextField
+    let textView: RCTokenTextView
     var isSelected: Bool
     var showComma: Bool
     
@@ -68,7 +68,7 @@ class RCTokenView: UIView {
         self.showComma = false
         
         self.label = UILabel()
-        self.textField = RCTokenTextField()
+        self.textView = RCTokenTextView()
         
         self.maxWidth = CGFloat(2 * kHorizontalPadding)
         self.minWidth = CGFloat(2 * kVerticalPadding)
@@ -88,7 +88,7 @@ class RCTokenView: UIView {
         self.showComma = false
         
         self.label = UILabel()
-        self.textField = RCTokenTextField()
+        self.textView = RCTokenTextView()
         
         self.maxWidth = CGFloat(2 * kHorizontalPadding)
         self.minWidth = CGFloat(2 * kVerticalPadding)
@@ -108,7 +108,7 @@ class RCTokenView: UIView {
         self.showComma = showComma
         
         self.label = UILabel()
-        self.textField = RCTokenTextField()
+        self.textView = RCTokenTextView()
         
         self.maxWidth = CGFloat(2 * kHorizontalPadding)
         self.minWidth = CGFloat(2 * kVerticalPadding)
