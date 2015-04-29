@@ -23,7 +23,9 @@ class RCTokenView: UIView {
     
     let name: String
     var label: UILabel
-    let textView: RCTokenTextView
+    
+    @IBOutlet weak var textView: UITextView!
+    
     var isSelected: Bool
     var showComma: Bool
     
