@@ -39,8 +39,11 @@ class RCTokenTextView: UITextView {
     ////////FUNCTIONS//////////////
     ///////////////////////////////
     
-    func keyboardInputShouldDelete(textField: UITextField) -> Bool {
+    func keyboardInputShouldDelete(textView: UITextView) -> Bool {
         var shouldDelete = true
+        
+        
+        
         return shouldDelete
     }
     

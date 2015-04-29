@@ -15,6 +15,7 @@
 		305E473F1AE59AA60091FCEB /* RCTokenPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305E473E1AE59AA60091FCEB /* RCTokenPickerView.swift */; };
 		305E477B1AE824D60091FCEB /* RCTokenPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 305E477A1AE824D60091FCEB /* RCTokenPickerView.xib */; };
 		30B105D51AEEB87C006EAE55 /* RCTokenTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B105D41AEEB87C006EAE55 /* RCTokenTextView.swift */; };
+		30B105D71AF06046006EAE55 /* RCTokenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30B105D61AF06046006EAE55 /* RCTokenView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		305E473E1AE59AA60091FCEB /* RCTokenPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCTokenPickerView.swift; sourceTree = "<group>"; };
 		305E477A1AE824D60091FCEB /* RCTokenPickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RCTokenPickerView.xib; sourceTree = "<group>"; };
 		30B105D41AEEB87C006EAE55 /* RCTokenTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCTokenTextView.swift; sourceTree = "<group>"; };
+		30B105D61AF06046006EAE55 /* RCTokenView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RCTokenView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				305E47231AE40F0A0091FCEB /* RCTokenPicker.h */,
 				305E473A1AE599460091FCEB /* RCTokenViewStyle.swift */,
 				305E473C1AE599860091FCEB /* RCTokenView.swift */,
+				30B105D61AF06046006EAE55 /* RCTokenView.xib */,
 				30B105D41AEEB87C006EAE55 /* RCTokenTextView.swift */,
 				305E473E1AE59AA60091FCEB /* RCTokenPickerView.swift */,
 				305E477A1AE824D60091FCEB /* RCTokenPickerView.xib */,
@@ -208,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				305E477B1AE824D60091FCEB /* RCTokenPickerView.xib in Resources */,
+				30B105D71AF06046006EAE55 /* RCTokenView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
