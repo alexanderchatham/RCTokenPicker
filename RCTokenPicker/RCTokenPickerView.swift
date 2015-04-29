@@ -21,10 +21,26 @@ class RCTokenPickerView: UIView, UITextViewDelegate {
     @IBOutlet weak var textView: UITextView!
     
     ///////////////////////////////
+    /////INITIALIZERS//////////////
+    ///////////////////////////////
+    
+    init() {
+        self.textView = RCTokenTextView()
+        self.textView.textContainer.exclusionPaths = [UIBezierPath(rect: toLabel.frame), UIBezierPath(rect: addContactButton.frame)]
+        
+        super.init(frame: CGRect())
+    }
+
+    required init(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    ///////////////////////////////
     ////////FUNCTIONS//////////////
     ///////////////////////////////
     
-    @IBAction func addContact(sender: AnyObject) {
+    @IBAction func addContactButtonPressed(sender: AnyObject) {
+        //Can be extended to segue to a contact list for additiional picking options
     }
     
     func textViewDidChange(textView: UITextView) {

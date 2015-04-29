@@ -21,10 +21,15 @@ class RCTokenView: UIView {
     //////PROPERTIES///////////////
     ///////////////////////////////
     
-    let name: String
-    var label: UILabel
     
     @IBOutlet weak var textView: UITextView!
+    
+    @IBOutlet weak var topConstraint: NSLayoutConstraint!
+    @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
+    @IBOutlet weak var leftConstraint: NSLayoutConstraint!
+    @IBOutlet weak var rightConstraint: NSLayoutConstraint!
+    
+    let name: String
     
     var isSelected: Bool
     var showComma: Bool
@@ -69,9 +74,6 @@ class RCTokenView: UIView {
         self.isSelected = false
         self.showComma = false
         
-        self.label = UILabel()
-        self.textView = RCTokenTextView()
-        
         self.maxWidth = CGFloat(2 * kHorizontalPadding)
         self.minWidth = CGFloat(2 * kVerticalPadding)
         
@@ -88,9 +90,6 @@ class RCTokenView: UIView {
         self.selectedStyle = selectedStyle
         self.isSelected = false
         self.showComma = false
-        
-        self.label = UILabel()
-        self.textView = RCTokenTextView()
         
         self.maxWidth = CGFloat(2 * kHorizontalPadding)
         self.minWidth = CGFloat(2 * kVerticalPadding)
@@ -109,9 +108,6 @@ class RCTokenView: UIView {
         self.isSelected = false
         self.showComma = showComma
         
-        self.label = UILabel()
-        self.textView = RCTokenTextView()
-        
         self.maxWidth = CGFloat(2 * kHorizontalPadding)
         self.minWidth = CGFloat(2 * kVerticalPadding)
         
@@ -127,10 +123,16 @@ class RCTokenView: UIView {
     
     func setupView() {
         
-        self.label.backgroundColor = UIColor.clearColor()
+        //Totally unimplemented so far 
+        //Setup frame
+        //Using textView allows us to use the selector to get the iOS8 look and feel when picking contacts
+        
+        self.textView.backgroundColor = UIColor.clearColor()
         if self.showComma {
-            self.label.text = String("")
+            self.textView.text = String(self.name)
         }
+        
+        self.textView.sizeToFit() //Not sure if this works
     }
     
     /*

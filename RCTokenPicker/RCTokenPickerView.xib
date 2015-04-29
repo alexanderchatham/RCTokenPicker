@@ -34,7 +34,7 @@
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="addContact:" destination="-1" eventType="touchUpInside" id="frH-AQ-e9Z"/>
+                        <action selector="addContactButtonPressed:" destination="-1" eventType="touchUpInside" id="i65-13-gKb"/>
                     </connections>
                 </button>
             </subviews>
