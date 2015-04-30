@@ -6,10 +6,26 @@
 //  Copyright (c) 2015 Chatham Engineering Technologies LLC. All rights reserved.
 //
 
+
+//
+//
+//
+//
+//
+//
+
+
 import UIKit
+
+protocol RCTokenPickerViewDelegate {
+    
+}
 
 class RCTokenPickerView: UIView, UITextViewDelegate {
 
+    let nibName = "RCTokenPickerView"
+    var view: UIView!
+    
     ///////////////////////////////
     //////PROPERTIES///////////////
     ///////////////////////////////
@@ -24,15 +40,19 @@ class RCTokenPickerView: UIView, UITextViewDelegate {
     /////INITIALIZERS//////////////
     ///////////////////////////////
     
-    init() {
+    override init(frame: CGRect) {
         self.textView = RCTokenTextView()
         self.textView.textContainer.exclusionPaths = [UIBezierPath(rect: toLabel.frame), UIBezierPath(rect: addContactButton.frame)]
         
-        super.init(frame: CGRect())
+        super.init(frame: frame)
+        
+        setup()
     }
 
     required init(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: aDecoder)
+        
+        setup()
     }
     
     ///////////////////////////////
@@ -45,6 +65,26 @@ class RCTokenPickerView: UIView, UITextViewDelegate {
     
     func textViewDidChange(textView: UITextView) {
         
+    }
+    
+    func setup() {
+        // setup the view from .xib
+        
+        //messageLabel.lineBreakMode = NSLineBreakMode.ByWordWrapping
+        
+        view = loadViewFromNib()
+        view.frame = self.bounds
+        view.autoresizingMask = UIViewAutoresizing.FlexibleWidth | UIViewAutoresizing.FlexibleHeight
+        
+        addSubview(view)
+    }
+    
+    func loadViewFromNib() -> UIView {
+        let bundle = NSBundle(forClass: self.dynamicType)
+        let nib = UINib(nibName: nibName, bundle: bundle)
+        let view = nib.instantiateWithOwner(self, options: nil)[0] as! UIView
+        
+        return view
     }
     
     /*

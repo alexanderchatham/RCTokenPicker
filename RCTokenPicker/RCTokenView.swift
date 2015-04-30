@@ -16,6 +16,9 @@ protocol RCTokenViewDelegate {
 }
 
 class RCTokenView: UIView {
+    
+    let nibName = "RCTokenView"
+    var view: UIView!
 
     ///////////////////////////////
     //////PROPERTIES///////////////
@@ -79,7 +82,7 @@ class RCTokenView: UIView {
         
         self.gradientLayer = CAGradientLayer()
         
-        super.init(coder: NSCoder())
+        super.init(frame: CGRect())
         self.setupView()
     }
     
@@ -96,7 +99,7 @@ class RCTokenView: UIView {
         
         self.gradientLayer = CAGradientLayer()
         
-        super.init(coder: NSCoder())
+        super.init(frame: CGRect())
         self.setupView()
     }
     
@@ -113,9 +116,10 @@ class RCTokenView: UIView {
         
         self.gradientLayer = CAGradientLayer()
         
-        super.init(coder: NSCoder())
+        super.init(frame: CGRect())
         self.setupView()
     }
+    
     
     required init(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -123,9 +127,17 @@ class RCTokenView: UIView {
     
     func setupView() {
         
+        view = loadViewFromNib()
+        view.frame = self.bounds
+        view.autoresizingMask = UIViewAutoresizing.FlexibleWidth | UIViewAutoresizing.FlexibleHeight
+        
         //Totally unimplemented so far 
         //Setup frame
         //Using textView allows us to use the selector to get the iOS8 look and feel when picking contacts
+        self.topConstraint.constant = 2
+        self.bottomConstraint.constant = 2
+        self.leftConstraint.constant = 3
+        self.rightConstraint.constant = 3
         
         self.textView.backgroundColor = UIColor.clearColor()
         if self.showComma {
@@ -133,6 +145,16 @@ class RCTokenView: UIView {
         }
         
         self.textView.sizeToFit() //Not sure if this works
+        self.view.sizeToFit()
+        addSubview(view)
+    }
+    
+    func loadViewFromNib() -> UIView {
+        let bundle = NSBundle(forClass: self.dynamicType)
+        let nib = UINib(nibName: nibName, bundle: bundle)
+        let view = nib.instantiateWithOwner(self, options: nil)[0] as! UIView
+        
+        return view
     }
     
     /*
